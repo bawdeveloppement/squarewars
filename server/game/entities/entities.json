@@ -1,0 +1,38 @@
+{
+    "KingSnake": {
+        "variables": [
+            "x",
+            "y"
+        ],
+        "components": {
+            "TransformComponent": {
+                "x": "$x",
+                "y": "$y"
+            },
+            "SquareComponent": {
+                "width": 32,
+                "height": 32
+            },
+            "MotherComponent": {
+                "__server": true,
+                "childName": "Snake"
+            }
+        }
+    },
+    "Snake": {
+        "variables": {
+            "x": "number",
+            "y": "number"
+        },
+        "components": {
+            "TransformComponent": {
+                "x": "$x",
+                "y": "$y"
+            },
+            "SquareComponent": {
+                "width": 16,
+                "height": 16
+            }
+        }
+    }
+}
